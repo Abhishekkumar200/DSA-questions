@@ -1,6 +1,11 @@
 # Normal BST To Balanced BST
-You have been given a binary search tree of integers with n nodes your task is to convert it into a balanced bst with the minimum height possible.
 
+### Problem Statement:
+---
+You have been given a `binary search tree` of integers with `n` nodes your task is to convert it into a balanced `bst` with the minimum height possible.
+
+### Code:
+---
 ```C++
 void inorderTraversal(TreeNode<int>* root, vector<int> &v)
 {
