@@ -1,6 +1,6 @@
 # Merge Two BSTs
 ### Problem Statement:
-- - - -
+---
 You are given two `balanced binary search trees` of integers having `N` and `M` nodes. You have to merge the two `BSTs` into a `balanced binary search tree` and return the root node to that balanced `BST`.
 A `binary search tree` (BST) is a binary tree data structure with the following properties. 
 * The left subtree of a node contains only nodes with data less than the node's data.
@@ -8,7 +8,7 @@ A `binary search tree` (BST) is a binary tree data structure with the following 
 * Both the left and right subtrees must also be binary search trees.
 
 ### Code:
-- - - -
+---
 
 ```C++
 #include <bits/stdc++.h> 
