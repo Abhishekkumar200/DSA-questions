@@ -13,9 +13,9 @@ A `min-Binary heap` is a complete `binary tree` in which the value of each inter
 
 ### Constraints:
 
-* $`1 <= T <= 10`$
-* $`1 <= N <= 10^4`$
-* $`-10^9 <= ARR[i] <= 10^9`$
+* 1 <= T <= 10
+* 1 <= N <= 10<sup>4</sup>
+* -10<sup>9</sup> <= ARR[i] <= 10<sup>9</sup>
 * Time Limit: 1 sec
 
 Where `ARR[i]` denotes the `i-th` element of the array `ARR`.
