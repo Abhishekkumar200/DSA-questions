@@ -1,4 +1,4 @@
-# Lexicographical Numbers
+# [Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/description/)
 
 ### Problem Statement:
 Given an integer n, return all the numbers in the range `[1, n]` sorted in lexicographical order.
