@@ -1,6 +1,6 @@
 # [Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers/description/)
 
-### Problem Statement:
+#### Problem Statement:
 Given an integer n, return all the numbers in the range `[1, n]` sorted in lexicographical order.
 You must write an algorithm that runs in `O(n)` time and uses `O(1)` extra space. 
 
@@ -15,3 +15,50 @@ You must write an algorithm that runs in `O(n)` time and uses `O(1)` extra space
 **Input:** n = 2
 
 **Output:** [1,2]
+
+#### Code:
+
+```C++
+
+class Solution {
+public:
+    void solution(vector<int> &v, int n, int i)
+    {
+        if(i>n)
+        {
+            return;
+        }
+        
+        for(int j=0;j<=9;j++)
+        {
+            int temp = i*10+j;
+            // v.push_back(j);
+            if(temp<=n)
+            {
+                v.push_back(temp);
+                solution(v, n, temp); 
+            }
+                
+        }
+        
+        // for(int j=1;j<=9;j++)
+        // {
+        //     // v.push_back(j);
+        //     // solution(v, n, j);
+        // }
+    }
+    vector<int> lexicalOrder(int n) {
+        
+        vector<int> ans;
+        for(int i=1;i<=9 && i<=n;i++)
+        {
+            ans.push_back(i);
+            solution(ans, n, i);
+        }
+        
+        return ans;
+    }
+};
+
+```
+
