@@ -50,3 +50,37 @@ Sum of [0, 1] = 5
 Sum of [1, 1] = 1
 
 All sum of subarrays are {5, 4, 1} where the second largest element is 4.
+
+#### Code:
+
+```C++
+
+#include<queue>
+
+int getKthLargest(vector<int> &arr, int k)
+{
+    //  Write your code here.
+    priority_queue<int, vector<int>, greater<int>> h;
+    
+    int size = arr.size();
+    for(int i=0;i<size;i++)
+    {
+        int sum = 0;
+        for(int j=i;j<size;j++)
+        {
+            sum+=arr[j];
+            if(h.size()<k)
+            {
+                h.push(sum);
+            }
+            else if(sum>h.top())
+            {
+                h.pop();
+                h.push(sum);
+            }
+        }
+    }
+    return h.top();
+}
+
+```
