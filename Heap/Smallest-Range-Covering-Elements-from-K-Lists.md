@@ -36,3 +36,80 @@ We define the range `[a, b]` is smaller than range `[c, d]` if `b - a < d - c` o
 * `-10^5 <= nums[i][j] <= 10^5`
 
 * `nums [i] is sorted in non-decreasing order`.
+
+#### Code:
+
+```C++
+
+class node
+{
+    public:
+    int data;
+    int row;
+    int column;
+    node(int data, int row , int column)
+    {
+        this->data = data;
+        this->row = row;
+        this->column = column;
+    }
+};
+
+class comp
+{
+    public:
+    bool operator()(node *a, node *b)
+    {
+        return a->data>b->data;
+    }
+};
+
+class Solution {
+public:
+    vector<int> smallestRange(vector<vector<int>>& nums) {
+        
+        priority_queue<node*, vector<node*>, comp> minHeap;
+        vector<int> ans;
+        int maxi = INT_MIN;
+        int mini = INT_MAX;
+        int k = nums.size();
+        for(int i=0;i<k;i++)
+        {
+            node *temp = new node(nums[i][0], i, 0);
+            minHeap.push(temp);
+            maxi = max(maxi, nums[i][0]);
+            mini = min(mini, nums[i][0]);
+        }
+        int start = mini;
+        int end = maxi;
+        while(!minHeap.empty())
+        {
+            node *tmp = minHeap.top();
+            minHeap.pop();
+            mini = tmp->data;
+            if(maxi-mini<end-start)
+            {
+                start = mini;
+                end = maxi;
+            }
+            int row = tmp->row;
+            int column = tmp->column;
+            int rowSize = nums[row].size();
+            
+            if(column+1 < rowSize)
+            {
+                maxi = max(maxi, nums[row][column+1]);
+                minHeap.push(new node(nums[row][column+1], row, column+1));
+            }
+            else
+            {
+                break;
+            }
+        }
+        ans.push_back(start);
+        ans.push_back(end);
+        return ans;
+    }
+}
+
+```
