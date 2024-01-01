@@ -7,6 +7,35 @@ A **queen** can be killed when it lies in the same _row_, or same _column_, or t
 #### Constraints:
 * `1<= N <= 10`
 * `Time limit: 1sec`
+
+#### Sample Input 1:
+
+4
+
+#### Sample Output 1:
+
+0010100000010100
+
+0100000110000010
+
+#### Explanation For Sample Input 1:
+
+Output depicts two possible
+
+Output depicts two possible configurations of the chessboard for 4 queens.
+
+The Chessboard matrix for the first configuration looks as follows:-
+
+0010
+
+1000
+
+0001
+
+0100
+
+Queen contained cell is depicted by 1. As seen, No queen is in the same row, column, or diagonal as the other queens. Hence this is a valid configuration.
+
 #### Code:
 
 ```C++
