@@ -14,4 +14,15 @@ A Sudoku solution must satisfy all the following conditions-
 3. Each of the digits 1-9 must occur exactly once in each of the 9, 3x3 sub-grids of the grid.
 
 You can also assume that there will be only one sudoku solution for the given matrix.
-#### Code:
+
+#### Input Format:
+
+The input consists of 9 lines. Each line contains 9 single space-separated integers representing a row of the matrix. An empty cell is represented by 0.
+
+#### Constraints:
+
+Size of MAT is 9x9
+
+0 <= MAT[i][j] <= 9
+
+where an empty cell is given by 0 in the matrix.
