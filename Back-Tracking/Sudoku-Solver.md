@@ -26,3 +26,7 @@ Size of MAT is 9x9
 0 <= MAT[i][j] <= 9
 
 where an empty cell is given by 0 in the matrix.
+
+#### Output Format:
+
+The output is consists of 9 lines. Each line contains 9 single space-separated integers where the empty cells from the input matrix are replaced by some integers.
