@@ -21,11 +21,10 @@ The input consists of 9 lines. Each line contains 9 single space-separated integ
 
 #### Constraints:
 
-`Size of MAT is 9x9`
+* `Size of MAT is 9x9`
+* `0 <= MAT[i][j] <= 9`
 
-`0 <= MAT[i][j] <= 9`
-
-where an empty cell is given by 0 in the matrix.
+**where an empty cell is given by 0 in the matrix.**
 
 #### Output Format:
 
