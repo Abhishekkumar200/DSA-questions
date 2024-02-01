@@ -1,7 +1,7 @@
 # Sudoku Solver
 
 #### Problem Statement:
-You have been given a 9x9 2d integer matrix `MAT` representing a _Sudoku puzzle_. The empty cells of the _Sudoku_ are filled with zeros, and the rest of the cells are filled with integers from 1 to 9. Your task is to fill all the empty cells such that the final matrix represents a _Sudoku_ solution.
+You have been given a `9x9` 2d integer matrix `MAT` representing a **_Sudoku puzzle_**. The empty cells of the **_Sudoku_** are filled with zeros, and the rest of the cells are filled with integers from 1 to 9. Your task is to fill all the empty cells such that the final matrix represents a **_Sudoku_** solution.
 
 #### Note:
 
@@ -13,7 +13,7 @@ You have been given a 9x9 2d integer matrix `MAT` representing a _Sudoku puzzle_
 
 3. Each of the digits 1-9 must occur exactly once in each of the 9, 3x3 sub-grids of the grid.
 
-You can also assume that there will be only one _sudoku_ solution for the given matrix.
+You can also assume that there will be only one **_sudoku_** solution for the given matrix.
 
 #### Input Format:
 
